@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-decoration-color: none;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fdf3fa;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+  margin-bottom: -0.9rem;
+  font-family: "Kaushan Script", cursive;
+  font-size: 2.5rem;
+  color: #2a2f4f;
+}
+.header .navbar .burger-menu {
+  display: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+.header .navbar .navbar__links {
+  display: flex;
+  justify-content: flex-end;
+  margin: 3rem;
+  margin-bottom: -0.2rem;
+  gap: 3rem;
+  list-style: none;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2a2f4f;
+}
+.header .navbar .navbar__links a {
+  position: relative;
+  font-size: 1.4rem;
+  color: #2a2f4f;
+}
+.header .navbar .navbar__links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.3rem;
+  width: 100%;
+  height: 0.1rem;
+  background: #2a2f4f;
+  border-radius: 0.2rem;
+  transform: translateY(0.8rem);
+  opacity: 0;
+  transition: 0.5s;
+}
+.header .navbar .navbar__links a:hover::after {
+  transform: translateY(0);
+  opacity: 1;
+}
+.header .navbar .navbar__links a:focus {
+  color: #2a2f4f;
+}
+.header .search-bar {
+  width: 20rem;
+  height: 3rem;
+  margin-bottom: -1.3rem;
+  background: transparent;
+  border: 0.1rem solid #2a2f4f;
+  border-radius: 0.2rem;
+  display: flex;
+  align-items: center;
+}
+.header .search-bar input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  color: #2a2f4f;
+  font-family: "Poppins", sans-serif;
+  padding-left: 0.5rem;
+}
+.header .search-bar input::-moz-placeholder {
+  color: #2a2f4f;
+}
+.header .search-bar input::placeholder {
+  color: #2a2f4f;
+}
+.header .search-bar button {
+  width: 2.8rem;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .search-bar button i {
+  font-size: 2rem;
+  color: #2a2f4f;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10rem;
+}
+main .hero {
+  background: url("/img/kueche.jpg");
+}
+main div {
+  margin: 2rem 0;
+}
+main div p {
+  margin: 0 5rem;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    background-color: tomato;
+  }
+  .burger-menu {
+    display: none;
+  }
+}
+@media screen and (max-width: 320px) {
+  body {
+    background-color: lightgreen;
+  }
+}/*# sourceMappingURL=main.css.map */

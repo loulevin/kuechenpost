@@ -96,6 +96,7 @@ body {
     width: 20rem;
     height: 3rem;
     margin-bottom: -1.3rem;
+    margin-right: 1rem;
     background: transparent;
     border: 0.1rem solid $color-font-dark;
     border-radius: 0.2rem;
@@ -162,6 +163,45 @@ main {
       margin: 0 5rem;
       font-size: 2rem;
     }
+  }
+}
+
+.footer {
+  border: 2px solid red;
+  background-color: $color-dark;
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+  .footer__links {
+    font-size: 1.2rem;
+    margin: 2vh 15vw;
+    li,
+    a {
+      color: $color-font-light;
+      list-style: none;
+    }
+  }
+  .footer__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 2rem;
+      color: $color-font-dark;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      margin: 1rem;
+      background-color: $color-light;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .4s;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
   }
 }
 

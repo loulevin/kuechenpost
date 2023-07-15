@@ -82,6 +82,7 @@ body {
   width: 20rem;
   height: 3rem;
   margin-bottom: -1.3rem;
+  margin-right: 1rem;
   background: transparent;
   border: 0.1rem solid #2a2f4f;
   border-radius: 0.2rem;
@@ -151,6 +152,44 @@ main div {
 main div p {
   margin: 0 5rem;
   font-size: 2rem;
+}
+
+.footer {
+  border: 2px solid red;
+  background-color: #2a2f4f;
+  height: 20rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .footer__links {
+  font-size: 1.2rem;
+  margin: 2vh 15vw;
+}
+.footer .footer__links li,
+.footer .footer__links a {
+  color: #fde2f3;
+  list-style: none;
+}
+.footer .footer__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer__icon i {
+  font-size: 2rem;
+  color: #2a2f4f;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin: 1rem;
+  background-color: #e5beec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+.footer .footer__icon i:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (max-width: 768px) {

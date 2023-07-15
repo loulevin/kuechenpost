@@ -24,7 +24,7 @@ body {
   background-color: transparent;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
 .header .logo {
   display: flex;
@@ -120,6 +120,8 @@ body {
 }
 
 main {
+  position: relative;
+  top: 0;
   display: flex;
   justify-content: center;
   display: flex;

@@ -21,7 +21,6 @@ $color-light: #e5beec;
 $color-dark: #2a2f4f;
 $color-test: #551a8b;
 
-
 $color-font-dark: #2a2f4f;
 $color-font-light: #fde2f3;
 
@@ -44,7 +43,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: 3rem;
-    margin-bottom: -.9rem;
+    margin-bottom: -0.9rem;
     font-family: $font-family-logo;
     font-size: 2.5rem;
     color: $color-font-dark;
@@ -136,7 +135,20 @@ main {
   display: flex;
   justify-content: center;
   .hero {
-    background: url("/img/kueche.jpg");
+    width: 100%;
+    height: 50vh;
+    background-image: url("/img/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    h1 {
+      color: $color-font-light;
+      font-family: "Kaushan Script", cursive;
+      font-size: 5rem;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+    }
   }
   display: flex;
   flex-direction: column;

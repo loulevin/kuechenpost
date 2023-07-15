@@ -186,10 +186,12 @@ main div p {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.4s;
+  transition: 0.7s;
 }
 .footer .footer__icon i:hover {
-  transform: scale(1.2);
+  transform: scale(1.8);
+  color: #fde2f3;
+  background-color: #2a2f4f;
 }
 
 @media screen and (max-width: 768px) {

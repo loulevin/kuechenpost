@@ -37,20 +37,19 @@ body {
   color: #2a2f4f;
 }
 .header .burger-menu {
-  border: 2px solid red;
   display: block;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 3rem;
 }
 .header .burger-menu .bx {
-  border: 2px solid green;
-  font-size: 2rem;
+  border: 2px solid red;
   color: #2a2f4f;
 }
-.header .navbar {
-  display: flex;
+
+.navbar {
+  display: none;
 }
-.header .navbar .navbar__links {
+.navbar .navbar__links {
   display: flex;
   justify-content: flex-end;
   margin: 3rem;
@@ -62,12 +61,12 @@ body {
   text-transform: uppercase;
   color: #2a2f4f;
 }
-.header .navbar .navbar__links a {
+.navbar .navbar__links a {
   position: relative;
   font-size: 1.4rem;
   color: #2a2f4f;
 }
-.header .navbar .navbar__links a::after {
+.navbar .navbar__links a::after {
   content: "";
   position: absolute;
   left: 0;
@@ -80,14 +79,15 @@ body {
   opacity: 0;
   transition: 0.5s;
 }
-.header .navbar .navbar__links a:hover::after {
+.navbar .navbar__links a:hover::after {
   transform: translateY(0);
   opacity: 1;
 }
-.header .navbar .navbar__links a:focus {
+.navbar .navbar__links a:focus {
   color: #2a2f4f;
 }
-.header .search-bar {
+
+.search-bar {
   display: none;
   width: 20rem;
   height: 3rem;
@@ -97,7 +97,7 @@ body {
   border: 0.1rem solid #2a2f4f;
   border-radius: 0.2rem;
 }
-.header .search-bar input {
+.search-bar input {
   width: 100%;
   background: transparent;
   border: none;
@@ -107,13 +107,13 @@ body {
   font-family: "Poppins", sans-serif;
   padding-left: 0.5rem;
 }
-.header .search-bar input::-moz-placeholder {
+.search-bar input::-moz-placeholder {
   color: #2a2f4f;
 }
-.header .search-bar input::placeholder {
+.search-bar input::placeholder {
   color: #2a2f4f;
 }
-.header .search-bar button {
+.search-bar button {
   width: 2.8rem;
   height: 100%;
   background: transparent;
@@ -123,7 +123,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.header .search-bar button i {
+.search-bar button i {
   font-size: 2rem;
   color: #2a2f4f;
 }
@@ -200,4 +200,16 @@ main div p {
   transform: scale(1.8);
   color: #fde2f3;
   background-color: #2a2f4f;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: flex;
+  }
+  .burger-menu {
+    display: none;
+  }
+  .search-bar {
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */

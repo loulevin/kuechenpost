@@ -36,10 +36,19 @@ body {
   font-size: 2.5rem;
   color: #2a2f4f;
 }
-.header .navbar .burger-menu {
-  display: none;
+.header .burger-menu {
+  border: 2px solid red;
+  display: block;
   cursor: pointer;
   font-size: 2rem;
+}
+.header .burger-menu .bx {
+  border: 2px solid green;
+  font-size: 2rem;
+  color: #2a2f4f;
+}
+.header .navbar {
+  display: flex;
 }
 .header .navbar .navbar__links {
   display: flex;
@@ -79,6 +88,7 @@ body {
   color: #2a2f4f;
 }
 .header .search-bar {
+  display: none;
   width: 20rem;
   height: 3rem;
   margin-bottom: -1.3rem;
@@ -86,8 +96,6 @@ body {
   background: transparent;
   border: 0.1rem solid #2a2f4f;
   border-radius: 0.2rem;
-  display: flex;
-  align-items: center;
 }
 .header .search-bar input {
   width: 100%;
@@ -192,18 +200,4 @@ main div p {
   transform: scale(1.8);
   color: #fde2f3;
   background-color: #2a2f4f;
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    background-color: tomato;
-  }
-  .burger-menu {
-    display: none;
-  }
-}
-@media screen and (max-width: 320px) {
-  body {
-    background-color: lightgreen;
-  }
 }/*# sourceMappingURL=main.css.map */

@@ -21,7 +21,8 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: transparent;
+  height: 12rem;
+  background-color: #917fb3;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -36,13 +37,15 @@ body {
   font-size: 2.5rem;
   color: #2a2f4f;
 }
-.header .burger-menu {
+
+.burger-menu {
   display: block;
   cursor: pointer;
   font-size: 3rem;
+  margin-right: 1rem;
+  margin-bottom: -1.2rem;
 }
-.header .burger-menu .bx {
-  border: 2px solid red;
+.burger-menu .bx {
   color: #2a2f4f;
 }
 
@@ -129,8 +132,6 @@ body {
 }
 
 main {
-  position: relative;
-  top: 0;
   display: flex;
   justify-content: center;
   display: flex;
@@ -163,27 +164,38 @@ main div p {
 }
 
 .footer {
-  border: 2px solid red;
   background-color: #2a2f4f;
   height: 20rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
-.footer .footer__links {
-  font-size: 1.2rem;
+
+.footer__links {
   margin: 2vh 15vw;
 }
-.footer .footer__links li,
-.footer .footer__links a {
-  color: #fde2f3;
+.footer__links li {
   list-style: none;
+  margin-bottom: 1rem;
 }
-.footer .footer__icon {
+.footer__links li:hover {
+  transform: translateX(-12px);
+}
+.footer__links li a {
+  font-size: 1.9rem;
+  color: #fde2f3;
+  margin-bottom: 1rem;
+  transition: 0.4s;
+}
+.footer__links li a:hover {
+  color: #917fb3;
+}
+
+.footer__icon {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer .footer__icon i {
+.footer__icon i {
   font-size: 2rem;
   color: #2a2f4f;
   height: 3rem;
@@ -196,7 +208,7 @@ main div p {
   align-items: center;
   transition: 0.7s;
 }
-.footer .footer__icon i:hover {
+.footer__icon i:hover {
   transform: scale(1.8);
   color: #fde2f3;
   background-color: #2a2f4f;

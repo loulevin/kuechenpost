@@ -40,7 +40,6 @@ img {
   width: 20rem;
   aspect-ratio: 1/1;
   border-radius: 10%;
-
 }
 
 .header {
@@ -201,12 +200,36 @@ main {
     width: 20rem;
     aspect-ratio: 1/1;
     border-radius: 50%;
-    border: .2rem solid $color-dark;
+    border: 0.2rem solid $color-dark;
     margin-bottom: 1rem;
     display: flex;
     justify-content: center;
   }
-  
+}
+
+.blog {
+  border: 2px solid $color-accent;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+  img {
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    aspect-ratio: 1/1;
+    border-radius: 3%;
+    margin: 1rem 0.5rem 0.5rem 2rem;
+  }
+  .blog-box {
+    display: flex;
+    justify-content: center;
+    h3 {
+      
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+  }
 }
 
 .footer {
@@ -270,6 +293,10 @@ main {
     display: flex;
   }
   .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .blog-box {
     display: flex;
     flex-direction: row;
   }

@@ -197,6 +197,30 @@ main div p {
   justify-content: center;
 }
 
+.blog {
+  border: 2px solid #917fb3;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 0.5rem;
+}
+.blog img {
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+  aspect-ratio: 1/1;
+  border-radius: 3%;
+  margin: 1rem 0.5rem 0.5rem 2rem;
+}
+.blog .blog-box {
+  display: flex;
+  justify-content: center;
+}
+.blog .blog-box h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 .footer {
   background-color: #2a2f4f;
   height: 22rem;
@@ -259,6 +283,10 @@ main div p {
     display: flex;
   }
   .container {
+    display: flex;
+    flex-direction: row;
+  }
+  .blog-box {
     display: flex;
     flex-direction: row;
   }

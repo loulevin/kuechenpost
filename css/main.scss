@@ -19,7 +19,7 @@ $color-bg-dark: #fde2f3;
 $color-accent: #917fb3;
 $color-light: #e5beec;
 $color-dark: #2a2f4f;
-$color-test: #551a8b;
+$color-test: #2a2f4f;
 
 $color-font-dark: #2a2f4f;
 $color-font-light: #fde2f3;
@@ -34,6 +34,7 @@ h2 {
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
+  color: $color-font-dark;
 }
 
 img {
@@ -207,27 +208,29 @@ main {
   }
 }
 
-.blog {
-  border: 2px solid $color-accent;
+.blog-section {
   display: flex;
   flex-wrap: wrap;
-  border-radius: 0.5rem;
-  img {
-    display: flex;
-    justify-content: center;
-    width: 20rem;
-    aspect-ratio: 1/1;
-    border-radius: 3%;
-    margin: 1rem 0.5rem 0.5rem 2rem;
-  }
-  .blog-box {
-    display: flex;
-    justify-content: center;
-    h3 {
-      
-      text-align: center;
-      font-size: 2rem;
-      font-weight: 600;
+  .blog {
+    border: 2px solid $color-bg-dark;
+    border-radius: 0.5rem;
+    img {
+      display: flex;
+      justify-content: center;
+      width: 20rem;
+      aspect-ratio: 1/1;
+      border-radius: 3%;
+      margin: 1rem 0.5rem 0.5rem 2rem;
+    }
+    .blog-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h3 {
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 600;
+      }
     }
   }
 }
@@ -296,8 +299,8 @@ main {
     display: flex;
     flex-direction: row;
   }
-  .blog-box {
+  .blog-section {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

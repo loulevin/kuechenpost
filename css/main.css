@@ -21,6 +21,7 @@ h2 {
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
+  color: #2a2f4f;
 }
 
 img {
@@ -197,13 +198,15 @@ main div p {
   justify-content: center;
 }
 
-.blog {
-  border: 2px solid #917fb3;
+.blog-section {
   display: flex;
   flex-wrap: wrap;
+}
+.blog-section .blog {
+  border: 2px solid #fde2f3;
   border-radius: 0.5rem;
 }
-.blog img {
+.blog-section .blog img {
   display: flex;
   justify-content: center;
   width: 20rem;
@@ -211,11 +214,12 @@ main div p {
   border-radius: 3%;
   margin: 1rem 0.5rem 0.5rem 2rem;
 }
-.blog .blog-box {
+.blog-section .blog .blog-box {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
-.blog .blog-box h3 {
+.blog-section .blog .blog-box h3 {
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
@@ -286,8 +290,8 @@ main div p {
     display: flex;
     flex-direction: row;
   }
-  .blog-box {
+  .blog-section {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=main.css.map */

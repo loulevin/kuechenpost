@@ -24,6 +24,12 @@ h2 {
   color: #2a2f4f;
 }
 
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 img {
   width: 20rem;
   aspect-ratio: 1/1;
@@ -211,7 +217,7 @@ main div p {
   justify-content: center;
   width: 20rem;
   aspect-ratio: 1/1;
-  border-radius: 3%;
+  border-radius: 0.3rem;
   margin: 1rem 0.5rem 0.5rem 2rem;
 }
 .blog-section .blog .blog-box {
@@ -219,10 +225,18 @@ main div p {
   flex-direction: column;
   justify-content: center;
 }
-.blog-section .blog .blog-box h3 {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 600;
+
+.recipes-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.recipes-section img {
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+  aspect-ratio: 1/1;
+  border-radius: 0.3rem;
+  margin: 1rem 0.5rem 0.5rem 2rem;
 }
 
 .footer {
@@ -293,5 +307,15 @@ main div p {
   .blog-section {
     display: flex;
     flex-wrap: wrap;
+  }
+  .recipes-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .recipes-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }/*# sourceMappingURL=main.css.map */

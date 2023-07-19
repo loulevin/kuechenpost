@@ -26,6 +26,15 @@ $color-font-light: #fde2f3;
 
 $font-family-logo: "Kaushan Script", cursive;
 
+@mixin img {
+  display: flex;
+  justify-content: center;
+  width: 20rem;
+  aspect-ratio: 1/1;
+  border-radius: 0.3rem;
+  margin: 1rem 0.5rem 0.5rem 2rem;
+}
+
 body {
   background-color: $color-bg-light;
 }
@@ -35,6 +44,12 @@ h2 {
   font-weight: 500;
   text-align: center;
   color: $color-font-dark;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 img {
@@ -49,6 +64,7 @@ img {
   width: 100%;
   height: 12rem;
   background-color: $color-accent;
+  display: block;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -215,23 +231,21 @@ main {
     border: 2px solid $color-bg-dark;
     border-radius: 0.5rem;
     img {
-      display: flex;
-      justify-content: center;
-      width: 20rem;
-      aspect-ratio: 1/1;
-      border-radius: 3%;
-      margin: 1rem 0.5rem 0.5rem 2rem;
+      @include img;
     }
     .blog-box {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      h3 {
-        text-align: center;
-        font-size: 2rem;
-        font-weight: 600;
-      }
     }
+  }
+}
+
+.recipes-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  img {
+    @include img;
   }
 }
 
@@ -285,6 +299,8 @@ main {
   }
 }
 
+
+
 @media screen and (min-width: 768px) {
   .navbar {
     display: flex;
@@ -302,5 +318,16 @@ main {
   .blog-section {
     display: flex;
     flex-wrap: wrap;
+  }
+  .recipes-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .recipes-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

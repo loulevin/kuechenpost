@@ -240,6 +240,12 @@ main div p {
   margin: 1rem 0.5rem 0.5rem 2rem;
 }
 
+.recipe-area {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .recipes-table {
   display: flex;
   flex-direction: column;
@@ -247,7 +253,7 @@ main div p {
   margin: 0 10%;
 }
 .recipes-table table {
-  width: 80%;
+  width: 100%;
   border-collapse: collapse;
   margin-top: 0.4rem;
 }
@@ -263,6 +269,10 @@ main div p {
 }
 .recipes-table ol {
   margin-top: 0.4rem;
+  margin-left: 1.5rem;
+}
+.recipes-table ol li {
+  font-size: 1.5rem;
 }
 
 .footer {

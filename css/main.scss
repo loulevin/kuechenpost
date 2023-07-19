@@ -248,13 +248,21 @@ main {
     @include img;
   }
 }
+
+.recipe-area {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 .recipes-table {
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 10%;
   table {
-    width: 80%;
+    width: 100%;
     border-collapse: collapse;
     margin-top: .4rem;
     th,
@@ -271,6 +279,10 @@ main {
   }
   ol {
     margin-top: .4rem;
+    margin-left: 1.5rem;
+    li {
+      font-size: 1.5rem;
+    }
   }
  
 }

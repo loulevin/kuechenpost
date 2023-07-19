@@ -1,15 +1,15 @@
 # Pattys Küchenpost
 
-- [] Bilder suchen
-- [] Farben raussuchen
-- [] Navbar einrichten
-    - [] Sectionen festlegen
-        - [] Suchleiste
-        - [] Blog
-        - [] Rezeptdatenbank
-        - [] Kinderlunchboxen
+- [x] Bilder suchen
+- [x] Farben raussuchen
+- [x] Navbar einrichten
+    - [x] Sectionen festlegen
+        - [x] Suchleiste
+        - [x] Blog
+        - [x] Rezeptdatenbank
+        - [-] Kinderlunchboxen
         - [] Kochbücher 
         - [] Contact
-- [] Blogbereich einrichten
-- [] Footer
+- [x] Blogbereich einrichten
+- [x] Footer
 - [] responsib
